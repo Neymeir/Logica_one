@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    var pulalinha = function(){
+        document.write("<br>");
+    };
+    var mostra = function(frase){
+        document.write(frase);
+        pulalinha();
+        pulalinha();
+    }
+
+    var NP = Math.round(Math.random() * 100);
+    var chute = prompt('fala tu que o meu eu ja sei!');
+
+    if(chute == NP){
+        mostra("Puts que cagada, pensei exatamente isso, " + NP);
+    } else {
+        mostra("Vacilou mah, era " + NP);
+    }
+
+  
+
+</script>

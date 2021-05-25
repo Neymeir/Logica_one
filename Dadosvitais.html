@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<script>
+    var pulalinha = function(){
+        document.write("<br>");
+    };
+    var mostra = function(frase){
+        document.write(frase);
+        pulalinha();
+        pulalinha();
+    }
+
+    var calculaIMC = function(altura, peso){
+        var imc = Math.round(peso / (altura * altura));
+        return imc;
+    }
+    
+    
+    var meuIMC = calculaIMC(1.72, 75);
+    mostra("O meu IMC é : " + meuIMC);
+
+
+    var IMCprimo = calculaIMC(1.76, 83);
+    mostra("O IMC do meu primo é: " + IMCprimo);
+    mostra("ainda está " + (IMCprimo - 18.5) + "falta para o IMC ideal");
+
+    var Nome = prompt("Qual seu nome?")
+    mostra("seja bem vindo, " + Nome + " Como vai?")
+    
+    var Altura = prompt("qual sua altura?");
+    mostra("sua altura é," + Altura + "!");
+
+    var Peso = prompt("qual o seu peso?");
+    mostra("seu peso é," + Peso + "!");
+
+    
+
+
+    var SeuIMC = calculaIMC(Altura, Peso);
+    mostra("O seu IMC é:" + SeuIMC + "!");
+    mostra("Dentro das estatisticas, " + (IMCprimo - 18.5) + " falta para o IMC ideal");
+
+
+
+</script>
